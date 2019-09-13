@@ -1,0 +1,54 @@
+{
+	"name": "hertzscript-velocity",
+	"version": "1.0.0",
+	"description": "Velocity is a concurrent REPL which is designed specifically for HertzScript coroutines. All code runs concurrently alongside the REPL, so you can continue typing/adding code while existing code is still running.",
+	"keywords": [
+		"javascript",
+		"preemption",
+		"preemptive",
+		"preemptible",
+		"protothreads",
+		"green-threads",
+		"coroutines",
+		"coroutine",
+		"coroutine-dispatcher",
+		"concurrency",
+		"automatic-concurrency",
+		"concurrent",
+		"concurrent-programming",
+		"concurrent-javascript",
+		"stackless-coroutines",
+		"multitasking",
+		"cooperative-multitasking",
+		"preemptive-multitasking",
+		"voluntary-preemtive-multitasking",
+		"repl"
+	],
+	"homepage": "https://github.com/hertzscript/Velocity#readme",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/hertzscript/Velocity.git"
+	},
+	"bugs": {
+		"url": "https://github.com/hertzscript/Velocity/issues"
+	},
+	"main": "src/Dispatcher.js",
+	"bin": {
+		"hzr": "./src/bin/REPL.js",
+		"hzrepl": "./src/bin/REPL.js",
+		"hzvelocity": "./src/bin/cREPL.js",
+		"hzv": "./src/bin/cREPL.js"
+	},
+	"author": "Dani Glore (https://github.com/Floofies)",
+	"contributors": [
+		"Thomas G. (https://github.com/trgwii)"
+	],
+	"license": "MIT",
+	"dependencies": {
+		"command-line-args": "^5.0.2",
+		"hertzscript-compiler": "",
+		"hertzscript-dispatcher": "",
+		"terminal-kit": "^1.26.8",
+		"@aoberoi/capture-console": "^1.1.0"
+	}
+}
