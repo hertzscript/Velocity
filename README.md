@@ -4,7 +4,7 @@
 
 HertzScript Velocity is a concurrent REPL which is designed specifically for HertzScript coroutines. All code runs concurrently alongside the REPL, so you can continue typing/adding code while existing code is still running.
 
-See the [HertzScript Specification](https://github.com/Floofies/hertzscript-specification) repository for more information.
+See the [HertzScript Specification](https://github.com/hertzscript/Specification) repository for more information.
 
 - [Command-Line Interfaces](#command-line-interfaces)
 	- [`hzv` / `hzvelocity`](#hzv--hzvelocty)
