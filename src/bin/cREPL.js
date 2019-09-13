@@ -17,7 +17,7 @@ function generateHzModule(hzSource) {
 	// Captures all console output from code inside the dispatcher
 	const cConsole = new CaptureConsole();
 	// ANSI Escape Codes
-	const ansiRegexp = /[\\u001B\\u009B][[\\]()#;?]*(?:(?:(?:[a-zA-Z\\d]*(?:;[a-zA-Z\\d]*)*)?\\u0007)|(?:(?:\\d{1,4}(?:;\\d{0,4})*)?[\\dA-PR-TZcf-ntqry=><~]))/;
+	const ansiRegexp = /[\u001b\u009b][[()#;?]*(?:[0-9]{1,4}(?:;[0-9]{0,4})*)?[0-9A-ORZcf-nqry=><]/g;
 	// Input history file size limit
 	if ("HZREPL_HISTORY_SIZE" in process.env) var historyLimit = Number(process.env.HZREPL_HISTORY_SIZE);
 	else var historyLimit = 1000;
