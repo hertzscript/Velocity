@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 // Concurrent Hertzscript Velocity REPL
 function generateHzModule(hzSource) {
-	console.log(generateHzModule);
 	// Compile the source code into a HertzScript Module
 	return eval("(hzUserLib) => { return " + hzSource + "};");
 }
